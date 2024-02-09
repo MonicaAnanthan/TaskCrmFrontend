@@ -1,0 +1,219 @@
+body {
+  height: 100%; 
+  background: radial-gradient(circle, #ff9595 0%, #f2daf5 100%);
+}
+
+h1{
+  text-align: center;
+}
+.task-dashboard {
+  padding: 20px;
+  min-height: 100%;
+}
+
+.status-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.status-column {
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+  padding: 0 18px;
+  border-radius: 5px;
+  height: 100%;
+  box-shadow: 0 2px 21px 3px rgba(0, 0, 0, 0.1);
+}
+
+.status-column h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.status-column .MuiCardContent-root ul{
+  list-style: none;
+  padding-left: 25px;
+}
+
+.status-column .MuiCardContent-root ul li h4,
+.status-column .MuiCardContent-root ul li p{
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.status-column .MuiCardContent-root:last-child,
+.status-column .MuiCardContent-root{
+  padding: 5px 0;
+}
+
+.status-box{
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 0 8px;
+}
+.status-box .MuiPaper-root.MuiPaper-elevation{
+  background-color: #f6f6f6;
+}
+.side-menu .MuiPaper-root.MuiPaper-elevation{
+  background: #fff;
+  box-shadow: 0 2px 21px 3px rgba(0, 0, 0, 0.1);
+}
+.MuiIconButton-root.delete-btn{
+    color: #a560ac;
+}
+.MuiButtonBase-root.add-btn{
+  font-size: 14px;
+  font-weight: 600;
+  background: #caa5ce;
+  color: #57245e;
+  width: 100%;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+.MuiButtonBase-root.add-btn:hover{
+  background: #caa5ce;
+  color: #57245e;
+}
+.side-menu a.MuiButtonBase-root:hover{
+  background-color: #caa5ce;
+}
+.card-box .MuiButtonBase-root.action-btn{
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #ace4ae;
+    border-radius: 0;
+    color: #1e4c1e;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 13px;
+  padding-bottom: 3px;
+  position: relative;
+}
+.card-action .MuiButtonBase-root.MuiButton-root{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  background: #e5e5e5;
+  background: #fff;
+  color: #a560ac;
+  border: 2px solid #a560ac;
+}
+.top-sec {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 21px 3px rgba(0, 0, 0, 0.1);
+  margin: 30px 8px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.top-sec h3{
+  margin: 0;
+  font-size: 22px;
+}
+.top-sec .MuiButtonBase-root.add-btn{
+  width: auto;
+  margin-bottom: 0;
+  margin-left: 27px;
+  border-radius: 4px;
+  background: #b9b9b9;
+  color: #212121;
+  background: #caa5ce;
+  color: #57245e;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.canvas-box{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 21px 3px rgba(0, 0, 0, 0.1);
+}
+.edit-box{
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+.edit-box input, .edit-box textarea{
+  display: block;
+  width: 90%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.edit-box textarea{
+  min-height: calc(1.5em + (3.75rem + 2px));
+  margin-top: 15px;
+}
+.save-btngroup {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+.save-btngroup button{
+    width: 100%;
+    margin: 0 10px;
+    padding: 8px;
+    border: 0;
+    color: #57245e;
+    background: #caa5ce;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.text-trunk{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  word-break: break-all;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.title-trunk{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.text-status{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.text-pending{
+  color: #fba400;
+}
+.text-in-progress{
+  color: #6666f0;
+}
+.text-completed{
+  color: #61c861;
+}
