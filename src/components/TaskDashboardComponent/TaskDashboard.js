@@ -50,7 +50,7 @@ const TaskDashboard = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:5000/tasks')
+    fetch('https://task-dev.onrender.com/tasks')
       .then((response) => response.json())
       .then((data) => {
         console.log("DATA :", data)
@@ -62,7 +62,7 @@ const TaskDashboard = () => {
   }, []);
 
   const deleteTask = (taskId) => {
-    fetch(`http://localhost:5000/tasks/${taskId}`, {
+    fetch(`https://task-dev.onrender.com/tasks/${taskId}`, {
       method: 'DELETE'
     })
       .then(response => {
@@ -78,7 +78,7 @@ const TaskDashboard = () => {
   };
 
   const moveTask = (taskId, newStatus) => {
-    fetch(`http://localhost:5000/tasks/${taskId}`, {
+    fetch(`https://task-dev.onrender.com/tasks/${taskId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -133,7 +133,7 @@ const TaskDashboard = () => {
 
     const updatedTask = { ...taskToUpdate, ...updatedTaskData };
 
-    fetch(`http://localhost:5000/tasks/${taskId}`, {
+    fetch(`https://task-dev.onrender.com/tasks/${taskId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

@@ -10,7 +10,7 @@ const AddNewTaskComponent = ({ addTask }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/tasks', {
+      const response = await axios.post('https://task-dev.onrender.com/tasks', {
         title,
         description,
         status: 'pending',
