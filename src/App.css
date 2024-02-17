@@ -62,6 +62,7 @@ h1{
 .MuiIconButton-root.delete-btn{
     color: #a560ac;
 }
+.log-btn,
 .MuiButtonBase-root.add-btn{
   font-size: 14px;
   font-weight: 600;
@@ -76,7 +77,7 @@ h1{
   background: #caa5ce;
   color: #57245e;
 }
-.side-menu a.MuiButtonBase-root:hover{
+.side-menu .MuiButtonBase-root:hover{
   background-color: #caa5ce;
 }
 .card-box .MuiButtonBase-root.action-btn{
@@ -216,4 +217,38 @@ h1{
 }
 .text-completed{
   color: #61c861;
+}
+.form-input{
+  display: block;
+  width: 90%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-top: 10px;
+}
+.log-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+.form-grp {
+  margin-bottom: 16px;
+}
+.log-btn{
+  border: 0;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }

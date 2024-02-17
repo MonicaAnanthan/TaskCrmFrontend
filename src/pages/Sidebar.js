@@ -5,7 +5,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-const Sidebar = () => {
+const Sidebar = ({ isLoggedIn, onLogout }) => {
   return (
     <Drawer
       variant="permanent"
@@ -20,12 +20,17 @@ const Sidebar = () => {
       }}
     >
       <List>
-        <ListItemButton component={Link} to="/">
+        <ListItemButton component={Link} to="/home">
           <ListItemText primary="Dashboard" />
         </ListItemButton>
         <ListItemButton component={Link} to="/charts">
           <ListItemText primary="Charts" />
         </ListItemButton>
+        {isLoggedIn && (
+          <ListItemButton onClick={onLogout} component={Link} to="/">
+            <ListItemText primary="Logout" />
+          </ListItemButton>
+        )}
       </List>
     </Drawer>
   );

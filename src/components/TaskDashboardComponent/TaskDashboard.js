@@ -53,7 +53,6 @@ const TaskDashboard = () => {
     fetch('https://task-dev.onrender.com/tasks')
       .then((response) => response.json())
       .then((data) => {
-        console.log("DATA :", data)
         setTasks(data);
       })
       .catch((error) => {
